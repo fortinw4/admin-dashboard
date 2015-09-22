@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<link rel="stylesheet" href="/stylesheets/font-awesome-4.4.0/css/font-awesome.css">
+	<link rel="stylesheet" href="/stylesheets/normalize.css">
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	</head>
+	<body>
+		
+		<header class="header-primary">
+			<img src="/images/Qiewie-horizontal-logo-color.svg" width="612" height="255" alt="logo"> <p class="title-para">Welcome to {{title}}</p>
+			<nav>
+				<a href="#"><i class="fa fa-globe"></i></a>
+				<a href="#"><i class="fa fa-comments-o"></i></a>
+				<a href="#"><i class="fa fa-money"></i></a>
+				<a href="#"><i class="fa fa-eye"></i></a>
+				<a href="#"><i class="fa fa-database"></i></a>
+
+			</nav>
+		</header>
+
+		<div class="panel content-primary">
+			
+			<div class="section data1">
+				<h2>Logged In Users<div id="gauge" class="gagedim"></div></h2>
+			</div>
+			
+			<div class="section data2">
+				<h2>Where Are They?<div id="map"></div></h2>
+			</div>
+
+		</div>
+		
+		<div class="panel content-secondary">
+			
+			<div class="section data3">
+				<h2>#Qiewie Tweets <div class="numtweets">{{numTweets}}</div></h2>
+			</div>
+
+			<div class="section data4">
+				<h2>Facebook Likes <div class="numlikes">{{numLikes}}</div></h2>
+			</div>
+
+			<div class="section data5">
+				<h2>New Users in Last 7 Days <div class="newusers7days">{{newUsers7Days}}</div></h2>
+			</div>
+
+		</div>
+
+		<div class="panel content-tertiary">
+			
+			<div class="section data6">
+				<h2>Premium Subscriptions Sold <div class="premium">{{premium}}</div></h2>
+			</div>
+
+			<div class="section data7">
+				<h2>Corporate Subscription Sold <div class="corporate">{{corporate}}</div></h2>
+			</div>
+
+			<div class="section data8">
+				<h2>Municipal Subscription Sold <div class="municipal">{{municipal}}</div></h2>
+			</div>
+
+		</div>
+
+		<script src="/javascripts/raphael-2.1.4.min.js"></script>
+		<script src="/javascripts/justgage-1.1.0.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+		<script src="/lodash/index.js"></script>
+		<script src="/jquery/dist/jquery.js"></script>
+		<script src="/javascripts/index.js"></script>
+	
+	</body>
+</html>
